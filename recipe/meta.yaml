@@ -1,6 +1,6 @@
 {% set name = "django-pyodbc-azure" %}
-{% set version = "1.11.0.0" %}
-{% set sha256 = "1f41d46e914a3cfd301db9551970d50c0ecbf84b91085b6bb77706dfcff7ed2e" %}
+{% set version = "2.0.4.1" %}
+{% set sha256 = "e4f878bc6f5729584e89ca8302e75492df3c5e4d6d566e30750921fe0f79195a" %}
 
 package:
   name: {{ name|lower }}
