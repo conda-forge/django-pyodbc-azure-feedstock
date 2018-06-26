@@ -13,15 +13,16 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - pyodbc >=3.0
-    - django >=1.11,<1.12
+    - django >=2.0.6,<2.1
 
 test:
   imports:

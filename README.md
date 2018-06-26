@@ -17,14 +17,15 @@ pyodbc library. It supports Microsoft SQL Server and Azure SQL Database.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-pyodbc-azure-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-pyodbc-azure-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-pyodbc-azure-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-pyodbc-azure-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-pyodbc-azure-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-pyodbc-azure-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/django-pyodbc-azure-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/django-pyodbc-azure-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-pyodbc-azure/badges/version.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-pyodbc-azure/badges/downloads.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django--pyodbc--azure-green.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django-pyodbc-azure.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django-pyodbc-azure.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django-pyodbc-azure.svg)](https://anaconda.org/conda-forge/django-pyodbc-azure) |
 
 Installing django-pyodbc-azure
 ==============================
@@ -69,6 +70,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
