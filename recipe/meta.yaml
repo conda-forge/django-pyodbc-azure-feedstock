@@ -12,13 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
   run:
     - pyodbc >=3.0
