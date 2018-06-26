@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - pyodbc >=3.0
-    - django >=1.11,<1.12
+    - django >=2.0.6,<2.1
 
 test:
   imports:
