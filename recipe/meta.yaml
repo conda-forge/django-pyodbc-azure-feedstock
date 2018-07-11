@@ -1,15 +1,12 @@
-{% set name = "django-pyodbc-azure" %}
 {% set version = "2.0.6.0" %}
-{% set sha256 = "dd1c20e50ad8b3df6fade3439681a9828ddea039cbf4ba0a8f901e902d63a45e" %}
 
 package:
-  name: {{ name|lower }}
+  name: django-pyodbc-azure
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
   url: https://github.com/michiya/django-pyodbc-azure/archive/{{ version }}.zip
-  sha256: {{ sha256 }}
+  sha256: dd1c20e50ad8b3df6fade3439681a9828ddea039cbf4ba0a8f901e902d63a45e
 
 build:
   number: 0
@@ -17,11 +14,12 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3
     - setuptools
   run:
+    - python >=3
     - pyodbc >=3.0
-    - django >=1.11,<1.12
+    - django >=2.0.6,<2.1
 
 test:
   imports:
