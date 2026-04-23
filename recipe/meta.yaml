@@ -10,20 +10,21 @@ source:
 
 build:
   noarch: python
-  number: 0
-  noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3
+    - python >={{ python_min }}
     - pyodbc >=3.0
     - django >=2.0.6,<2.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sql_server
     - sql_server.pyodbc
